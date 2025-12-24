@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <p><a href="{% url 'account_logout' %}"> logout </a></p>
-<p> Hello {{ user }} </p>
+<p> Hello {{ user }},your friends. </p>
+{% for friend in friends%}
+<p> {{friend.username }}</p>
+{% endfor %}
+
 {% endblock content %}
