@@ -1,0 +1,9 @@
+asgiref==3.11.0
+Django==6.0
+django-allauth==65.13.1
+django-bootstrap==0.2.4
+django-bootstrap5==25.3
+gunicorn==23.0.0
+packaging==25.0
+sqlparse==0.5.5
+tzdata==2025.3

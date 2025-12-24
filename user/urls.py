@@ -1,0 +1,9 @@
+# your_app/urls.py
+from django.urls import path
+from . import views
+
+app_name = "user"
+urlpatterns = [
+    path('profile/', views.profile_view, name='profile'),
+]
+
