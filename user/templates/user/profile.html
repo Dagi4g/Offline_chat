@@ -3,7 +3,7 @@
 <p><a href="{% url 'account_logout' %}"> logout </a></p>
 <p> Hello {{ user }},your friends. </p>
 {% for friend in friends%}
-<p> {{friend.username }}</p>
+<p><a href="{% url 'message:view_message' friend.id %}"> {{friend.username }} </a></p>
 {% endfor %}
 
 {% endblock content %}
